@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+
+    <style>
+        body {
+            background-color: rgb(231, 38, 77);
+            color: white;
+            font: 14pt Tahoma;
+        }
+        button.remover {
+            position: absolute;
+            right: 600px;
+        }
+        ul li.naoRealizada {
+            list-style-type: '□';
+            cursor: pointer;
+            text-indent: 10px;
+        }
+        ul li.realizada {
+            list-style-type: '☑';
+            cursor: pointer;
+            text-indent: 10px;
+            text-decoration: line-through;
+        }
+        h2 {
+            text-align: center;
+        }
+        div#divisao {
+            background-color: white;
+            display: block;
+            width: 800px;
+            padding: 10px;
+            margin: auto;
+        }
+        ul {
+            display: none;
+        }
+        ul li {
+            color:rgb(41, 199, 35)
+        }
+    </style>
+
+</head>
+<body>
+    <h2>Lista de Tarefas</h2>
+
+    <div id="divisao">
+        <div>
+            <input type="text" id="caixaTexto" placeholder="Tarefa">
+            <button id="botaoAdicionar" class="adicionar">&#10009</button>
+        </div>
+
+        <ul id="listaTarefas">
+
+        </ul>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
