@@ -8,9 +8,31 @@
 
     <style>
         body {
-            background-color: rgb(231, 38, 77);
+            background-image: linear-gradient(rgb(231, 38, 77), rgb(75, 229, 240));
+            height: 100vh;
+            width:100vw;
             color: white;
             font: 14pt Tahoma;
+        }
+        div#divisao {
+            background-color: white;
+            border-radius: 15px;
+            display: block;
+            width: 800px;
+            padding: 15px;
+            margin: auto;
+            margin-top: 50px;
+        }
+        h2 {
+            color:rgb(150, 67, 170);
+            text-align: center;
+            padding: 0px;
+        }
+        ul {
+            display: none;
+        }
+        ul li {
+            color:rgb(150, 67, 170);
         }
         button.remover {
             position: absolute;
@@ -27,29 +49,12 @@
             text-indent: 10px;
             text-decoration: line-through;
         }
-        h2 {
-            text-align: center;
-        }
-        div#divisao {
-            background-color: white;
-            display: block;
-            width: 800px;
-            padding: 10px;
-            margin: auto;
-        }
-        ul {
-            display: none;
-        }
-        ul li {
-            color:rgb(41, 199, 35)
-        }
     </style>
 
 </head>
 <body>
-    <h2>Lista de Tarefas</h2>
-
-    <div id="divisao">
+    <div id="divisao">    
+        <h2>Lista de Tarefas</h2>
         <div>
             <input type="text" id="caixaTexto" placeholder="Tarefa">
             <button id="botaoAdicionar" class="adicionar">&#10009</button>
