@@ -47,6 +47,7 @@
             list-style-type: '☑';
             cursor: pointer;
             text-indent: 10px;
+            color: darkgrey;
             text-decoration: line-through;
         }
     </style>
@@ -58,6 +59,13 @@
         <div>
             <input type="text" id="caixaTexto" placeholder="Tarefa">
             <button id="botaoAdicionar" class="adicionar">&#10009</button>
+
+            <select id="listaSuspensa" hidden>
+                <option>--Selecione uma opção--</option>
+                <option>Marcar todas as tarefas</option>
+                <option>Desmarcar todas as tarefas</option>
+                <option>Limpar lista</option>
+            </select>
         </div>
 
         <ul id="listaTarefas">
